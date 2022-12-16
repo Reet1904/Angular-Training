@@ -1,0 +1,59 @@
+interface shape
+{
+    shapename:string;
+    printname():void;
+}
+class Rectangle implements shape
+{
+    private length:number;
+    private breadth:number;
+    constructor(l:number,b:number)
+    {
+        this.length=l;
+        this.breadth=b;
+    }
+    shapename ="Rectangle";
+    printname()
+    {
+        console.log(this.shapename);
+    }
+    area():number
+    {
+        return this.length*this.breadth;
+    } } class Sphere implements shape
+{
+    private radius:number;
+    constructor(r:number)
+    {
+        this.radius=r;
+    }
+    shapename ="Sphere";
+    printname()
+    {
+        console.log(this.shapename);
+    }
+    area():number
+    {
+        return 4*3.14*this.radius*this.radius;
+    } } class Cone implements shape
+{
+    private radius:number;     private height:number;     constructor(r:number,h:number)
+    {
+        this.radius=r;
+        this.height=h;
+    }
+    shapename ="Cone";
+    printname()
+    {
+        console.log(this.shapename);
+    }
+    area():number
+    {
+        return 4*3.14*this.radius*this.radius;
+    } }  let objRect = new Rectangle(6,8);
+objRect.printname();
+console.log(objRect.area()); let objSph = new Sphere(3);
+objSph.printname();
+console.log(objSph.area()); let objCone = new Cone(4,8);
+objCone.printname();
+console.log(objCone.area());
