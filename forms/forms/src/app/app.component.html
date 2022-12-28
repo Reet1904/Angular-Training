@@ -1,0 +1,9 @@
+<h1> Forms</h1>
+<form [formGroup]="LoginForm" (ngSubmit)="LoginUsers()">
+  <input type="text" placeholder="Enter Email ID" formControlName="email">
+  <br> <br>
+  <span *ngif>This is not valid</span>
+  <input type="number" placeholder="Enter Mobile No" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]" formControlName="mobile">
+  <br> <br>
+  <button>Submit</button>
+</form>

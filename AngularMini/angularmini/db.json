@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "firstName": "Reet",
+      "lastName": "Nayak",
+      "gender": "Female",
+      "emailId": "reetnayak@gmail.com",
+      "empId": "1016158",
+      "phoneNumber": 9465241745,
+      "id": 2
+    },
+    {
+      "firstName": "Reet",
+      "lastName": "Nayak",
+      "gender": "Female",
+      "emailId": "reetnayak@gmail.com",
+      "empId": "1016158",
+      "phoneNumber": 9465241745,
+      "id": 3
+    },
+    {
+      "firstName": "Reet",
+      "lastName": "Nayak",
+      "gender": "Female",
+      "emailId": "reetnayak@gmail.com",
+      "empId": "1016158",
+      "phoneNumber": 9465241745,
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
