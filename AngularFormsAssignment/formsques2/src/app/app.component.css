@@ -1,0 +1,23 @@
+body {
+    background-color:lavender;
+    padding-block: 3%;
+    padding-left: 33%;
+    padding-right: 40%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 15%;
+    max-width: 5;
+    }
+form{
+    background-color: pink;    
+    padding-top: 20%;
+    padding-left: 100%;
+    padding-right: 500%;
+    padding-bottom: 50%;
+
+    
+}
+    .button{
+        background-color: aqua;
+        align-content: center;
+    }

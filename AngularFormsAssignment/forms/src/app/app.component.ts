@@ -6,7 +6,9 @@ import { NgForm } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
+  
   subscriptions = ["Basic", "Advanced", "Pro"];
   selectedSubscription = "Advanced";
   @ViewChild('f', { static: false })

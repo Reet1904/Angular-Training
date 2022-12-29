@@ -5,8 +5,11 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
      
-      <form #signupForm="ngForm" (ngSubmit)="onSubmit()">
-    
+      <body>
+        <div class="split left">
+          <div class="centered">
+                     
+      <form #signupForm="ngForm" (ngSubmit)="onSubmit()">        
         <div class="form-group">
           <label for="email">Mail</label>
           <input
@@ -25,7 +28,8 @@
         <br>
         <br>
         <div class="form-group">
-          <label for="subscription">Choose a Subscription</label>
+          <label for="subscription">Subscription</label>
+          <br>
           <select
             name="subscription"
             id="subscription"
@@ -56,6 +60,9 @@
         <br>
         <button class="btn btn-primary" type="submit">Submit</button>
       </form>
+    </div>
+  </div>
+      </body>
       
     </div>
   </div>
