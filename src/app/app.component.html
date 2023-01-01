@@ -1,0 +1,112 @@
+<div class="text-center">
+<div class="container">
+  <div class="center">
+  <mat-card >
+    <mat-card-header>
+      <mat-card-title> Login Form </mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</div> 
+<mat-card-content>
+  <form >
+    <div class="row">
+      
+      <div class="col-25">
+        <mat-icon>person</mat-icon>
+        <label for="fname">Full Name</label>
+      
+    </div>
+      <div class="col-75">
+        <mat-form-field>
+        <input matInput="text" id="reet" placeholder="Your name.."required>
+        
+      </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <mat-icon>mail</mat-icon>
+        <label for="emailid">Email ID</label>
+      </div>
+      <div class="col-75">
+       <mat-form-field>
+        <input matInput="text" placeholder="Your email id.." pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required >
+       
+      </mat-form-field>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <mat-icon>password</mat-icon>
+        <label for="password">Password</label>
+      </div>
+      <div class="col-75">
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <mat-icon>man</mat-icon>
+        <label for="gender">Gender</label>
+      </div>
+      <div class="col-75">
+        <mat-radio-group>
+          <mat-radio-button value="male"><mat-icon>male</mat-icon></mat-radio-button>
+          <mat-radio-button value="female"><mat-icon>female</mat-icon></mat-radio-button>
+          <mat-radio-button value="other"><mat-icon>transgender</mat-icon></mat-radio-button>
+        </mat-radio-group>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <mat-icon>calendar_month</mat-icon>
+        <label for="dob">DOB</label>
+      </div>
+      <div class="col-75">
+      
+        <input type="date" style="width: 15em;"required>
+      
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <mat-icon>smartphone</mat-icon>
+        <label for="mobileno.">Mobile No.</label>
+      </div>
+      <div class="col-75">
+      <mat-form-field>
+        <input matInput="text" id="mobileno" name="mobileno" placeholder="Your mobileno.." style="width: 100em;" required>
+      </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <mat-icon>book</mat-icon>
+        <label>Skills</label>
+      </div>
+      <div class="col-75">
+        <mat-form-field>
+        <select >
+          
+          <option value="angularbasic">Angular Basic</option>
+          <option value="angularintermediate">Angular Intermediate</option>
+          <option value="angularadvance">Angular Advanced</option>
+        
+        </select>
+      </mat-form-field>
+      </div>
+    </div>
+  
+    <div class="row">
+      <mat-card-actions>
+      <button button1 mat-raised-button color="accent">Submit</button>
+      </mat-card-actions>
+    </div>
+  </form>
+</mat-card-content>
+</div>
+</div>
+
+
