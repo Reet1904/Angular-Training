@@ -1,0 +1,64 @@
+<div class ="whole">
+<div class="text-center">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <h4 class="text-center" style="font-family: sans-serif; font-size: 30px;" ><u> Login Page</u></h4>
+    <br>
+    
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="d-flex-center">
+     
+
+      <div class="example-container">
+        <div>
+            <div class="mt-top-2">
+            <div class="row">
+          <mat-form-field>
+            <mat-icon matPrefix>person</mat-icon><mat-label>User Name</mat-label>
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error *ngIf="!loginForm.get('email')?.errors?.required && (loginForm.get('email')?.errors?.pattern)">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched) && loginForm.get('email')?.errors?.required">
+              Email is required
+            </mat-error>
+          </mat-form-field>
+        </div>
+        </div>
+        </div>
+        <div class="mt-top-2">
+            <div class="row">
+      
+              
+          <mat-form-field>
+            <mat-icon matPrefix>lock</mat-icon><mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Password" formControlName="password" >    
+            <mat-error *ngIf="!loginForm.get('password')?.errors?.required">
+              Password length must be greater than or equal to 8 and password must contain one or more uppercase , lowercase , numeric and special characters
+            </mat-error>
+            <mat-error *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched) && loginForm.get('password')?.errors?.required">
+              Password is required
+            </mat-error>
+            <mat-error>Must contain uppercase, lowercase and special characters</mat-error>
+          </mat-form-field>
+        </div>
+        </div>
+        <div class="mt-top">
+            
+            <a routerLink="/home"><button [disabled]="!loginForm.valid" mat-button color="accent" style =" background-color:rgb(96, 92, 92); color: black; width:50%; margin-right: 25%;" onclick="alert('Login Successfull')" mat-button>Submit</button></a>
+           <br>
+           <br>
+           
+            
+        </div>
+      </div>
+    </form>
+  
+</div>
+      
+      
+  
+
+ 

@@ -1,0 +1,33 @@
+<mat-toolbar color="accent" style="background-color: #61aee9;" class="example-toolbar">
+	<button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
+	
+    <h1 style="color: white; text-align: center; padding-top: 1em; font-family: 'Franklin Gothic Medium';">-------------------------------------------------------------------------Welcome To DashBoard----------------------------------------------------------------------------------</h1>
+</mat-toolbar>
+<mat-sidenav-container class="example-container" autosize>
+	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+		<mat-nav-list>
+			<mat-list-item (click)="showSubmenu = !showSubmenu" class="parent">
+				<span class="full-width" *ngIf="isExpanded || isShowing"><mat-icon mat-list-icon>home</mat-icon> Menu</span>
+				
+				<mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+			</mat-list-item>
+			<div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
+				
+				<span><a mat-list-item href="/signUp" onclick="signUp"><mat-icon>account_circle</mat-icon>   Register</a></span>
+				
+				
+			</div>
+		</mat-nav-list>
+    <mat-nav-list>
+</mat-nav-list>
+	</mat-sidenav>
+
+	<div class="example-sidenav-content">     
+		<h1 style="text-align: center; font-family: 'Gill Sans'; font-size: 50px ;color:rgba(14, 1, 1, 0.637) "><mat-icon>local_florist</mat-icon>Welcome To Yash Technologies <br><br>Go To Menu and Register<mat-icon>local_florist</mat-icon></h1> 
+    </div>  
+    
+
+</mat-sidenav-container>
+
+
+rgb(175, 88, 117)

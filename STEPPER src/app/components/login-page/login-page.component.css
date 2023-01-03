@@ -1,0 +1,62 @@
+
+.whole{
+  background-image: linear-gradient(#fbfbfb 50%,#98a9b9 90%);
+  height: 100%;
+  width: 100%;
+}
+.text-center{
+  text-align: center;
+}
+.example-container{
+  border-radius: 5px;
+  background-image: linear-gradient(#e3e7eb 50%,#61aee9 90%);
+  height: 50%;
+  width: 30%;
+  text-align:center;
+  box-shadow: 4px 4px 4px 4px rgb(115, 113, 113);
+}
+.d-flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mat-form-field{
+  width: 100%;
+}
+.mt-top{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.mt-top-2{
+  margin-top: 20px;
+}
+button {  
+  background-color: lightblue;  
+  color: black;  
+  font-size: 15px;  
+  margin: auto;  
+  float: right;
+  width: 100%;
+  }  
+ /* Floating column for labels: 25% width */
+ .col-25 {
+  float:left;
+  width: 15%;
+  margin-top: 12px;
+  width: 40%;
+  margin-left: 12px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
